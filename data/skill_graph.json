@@ -1,0 +1,14 @@
+{
+  "Python": [],
+  "Machine Learning": ["Python"],
+  "Docker": [],
+  "Kubernetes": ["Docker"],
+
+  "Communication": [],
+  "Negotiation": ["Communication"],
+  "CRM": ["Communication"],
+  "Sales Strategy": ["Negotiation", "CRM"],
+
+  "Recruitment": ["Communication"],
+  "Interviewing": ["Recruitment"]
+}
