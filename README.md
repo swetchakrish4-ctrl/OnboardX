@@ -1,4 +1,4 @@
-# OnboardAI: Next-Gen Talent Matcher
+# SentientPath: Next-Gen Talent Matcher
 
 
 
