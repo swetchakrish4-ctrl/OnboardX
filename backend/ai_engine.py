@@ -17,24 +17,24 @@ Text:
 """
 
     response = ollama.generate(
-        model='deepseek-r1:1.5b',  # good you switched to smaller model 👍
+        model='deepseek-r1:1.5b',  
         prompt=prompt
     )
 
     raw_output = response['response'].strip()
-    print("\n🔍 RAW OUTPUT:\n", raw_output)  # debug
+    print("\n🔍 RAW OUTPUT:\n", raw_output)  
 
-    # Remove thinking tags if present
+    
     if '</think>' in raw_output:
         raw_output = raw_output.split('</think>')[-1].strip()
 
-    # Extract only JSON part using regex
+    
     match = re.search(r'\[.*\]', raw_output, re.DOTALL)
 
     if match:
         json_str = match.group()
 
-        # Fix single quotes → double quotes (VERY IMPORTANT)
+        
         json_str = json_str.replace("'", '"')
 
         try:

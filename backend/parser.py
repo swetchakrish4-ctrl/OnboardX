@@ -14,5 +14,5 @@ def extract_text(file):
             for shape in slide.shapes:
                 if hasattr(shape, "text"): text += shape.text + " "
         return text
-    # Add EML logic here...
+    
     return ""
